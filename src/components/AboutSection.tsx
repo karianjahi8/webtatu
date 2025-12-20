@@ -1,4 +1,5 @@
-import { Building, Shield, Globe, Briefcase } from 'lucide-react';
+import { Building, Shield, Globe, Briefcase, Target, Eye, Heart } from 'lucide-react';
+import logo from '@/assets/logo.png';
 
 const AboutSection = () => {
   const pillars = [
@@ -21,6 +22,24 @@ const AboutSection = () => {
       icon: Briefcase,
       title: 'Long-term Partnership',
       description: 'Committed advisory relationships focused on sustainable outcomes, not short-term gains.'
+    }
+  ];
+
+  const missionVisionValues = [
+    {
+      icon: Target,
+      title: 'Our Mission',
+      description: 'To accelerate responsible blockchain adoption across governments and institutions by providing strategic advisory, education, and implementation services that bridge emerging technology with real-world policy requirements.'
+    },
+    {
+      icon: Eye,
+      title: 'Our Vision',
+      description: 'To be the globally recognized leader in institutional blockchain consultancy, shaping the future of public infrastructure, digital governance, and enterprise innovation through trusted partnerships and transformative solutions.'
+    },
+    {
+      icon: Heart,
+      title: 'Our Values',
+      description: 'Integrity, transparency, and accountability in every engagement. We prioritize long-term impact over short-term gains, embrace continuous learning, and maintain unwavering commitment to ethical technology adoption.'
     }
   ];
 
@@ -53,9 +72,7 @@ const AboutSection = () => {
             </p>
 
             <div className="flex items-center gap-4 pt-4 border-t border-border">
-              <div className="w-12 h-12 rounded-lg bg-gradient-gold flex items-center justify-center">
-                <span className="font-serif text-primary-foreground text-xl font-bold">W</span>
-              </div>
+              <img src={logo} alt="WEB TATU HUB Logo" className="w-14 h-14 rounded-lg object-contain" />
               <div>
                 <p className="font-semibold text-foreground">WEB TATU HUB</p>
                 <p className="text-sm text-muted-foreground">Blockchain Consultancy for Institutions</p>
@@ -75,6 +92,33 @@ const AboutSection = () => {
                 </div>
                 <h3 className="font-serif text-xl mb-2 text-foreground">{pillar.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">{pillar.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Mission, Vision, Values */}
+        <div className="mt-24 pt-16 border-t border-border">
+          <div className="text-center mb-12">
+            <h3 className="font-serif text-2xl md:text-3xl lg:text-4xl mb-4">
+              Guided by <span className="text-gradient-gold">Purpose & Principles</span>
+            </h3>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Our mission, vision, and values form the foundation of every partnership and engagement.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {missionVisionValues.map((item, index) => (
+              <div 
+                key={index}
+                className="group text-center p-8 rounded-2xl bg-gradient-card border border-border hover:border-primary/30 transition-smooth hover:shadow-card"
+              >
+                <div className="w-16 h-16 rounded-2xl bg-gradient-gold flex items-center justify-center mb-6 mx-auto group-hover:scale-105 transition-smooth">
+                  <item.icon className="w-8 h-8 text-primary-foreground" />
+                </div>
+                <h4 className="font-serif text-xl mb-4 text-foreground">{item.title}</h4>
+                <p className="text-muted-foreground leading-relaxed text-sm">{item.description}</p>
               </div>
             ))}
           </div>

@@ -1,4 +1,5 @@
 import { Linkedin, Twitter, Mail } from 'lucide-react';
+import logo from '@/assets/logo.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -24,9 +25,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-gradient-gold flex items-center justify-center">
-                <span className="font-serif text-primary-foreground text-lg font-bold">W</span>
-              </div>
+              <img src={logo} alt="WEB TATU HUB Logo" className="w-10 h-10 rounded-lg object-contain" />
               <span className="font-serif text-xl tracking-wide text-foreground">
                 WEB TATU HUB
               </span>

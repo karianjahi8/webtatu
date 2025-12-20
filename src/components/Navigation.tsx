@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
+import logo from '@/assets/logo.png';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,9 +34,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-lg bg-gradient-gold flex items-center justify-center">
-              <span className="font-serif text-primary-foreground text-lg font-bold">W</span>
-            </div>
+            <img src={logo} alt="WEB TATU HUB Logo" className="w-10 h-10 rounded-lg object-contain" />
             <span className="font-serif text-xl tracking-wide text-foreground group-hover:text-primary transition-smooth">
               WEB TATU HUB
             </span>
