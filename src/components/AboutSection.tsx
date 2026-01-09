@@ -1,27 +1,27 @@
-import { Building, Shield, Globe, Briefcase, Target, Eye, Heart } from 'lucide-react';
+import { Building, Shield, Globe, Users, Target, Eye, Heart, Landmark } from 'lucide-react';
 import logo from '@/assets/logo.png';
 
 const AboutSection = () => {
   const pillars = [
     {
-      icon: Building,
-      title: 'Institutional Excellence',
-      description: 'Tailored solutions for government agencies, public institutions, and regulated enterprises.'
+      icon: Globe,
+      title: 'Pan-African Expertise',
+      description: 'Deep understanding of African markets, regulatory landscapes, and infrastructure realities across the continent.'
     },
     {
       icon: Shield,
-      title: 'Responsible Innovation',
-      description: 'Balancing technological advancement with regulatory compliance and risk management.'
+      title: 'Compliance First',
+      description: 'Navigating local regulatory frameworks while aligning with international standards and best practices.'
     },
     {
-      icon: Globe,
-      title: 'Global Perspective',
-      description: 'Insights drawn from international best practices and cross-border implementations.'
+      icon: Users,
+      title: 'Capacity Building',
+      description: 'Investing in talent development, education, and skills transfer for sustainable ecosystem growth.'
     },
     {
-      icon: Briefcase,
-      title: 'Long-term Partnership',
-      description: 'Committed advisory relationships focused on sustainable outcomes, not short-term gains.'
+      icon: Landmark,
+      title: 'Institutional Bridge',
+      description: 'Connecting African institutions with global partners, vendors, and technology providers.'
     }
   ];
 
@@ -29,17 +29,17 @@ const AboutSection = () => {
     {
       icon: Target,
       title: 'Our Mission',
-      description: 'To accelerate responsible blockchain adoption across governments and institutions by providing strategic advisory, education, and implementation services that bridge emerging technology with real-world policy requirements.'
+      description: 'To accelerate responsible blockchain adoption across Africa by providing strategic advisory, education, and implementation services that address local challenges while connecting institutions to global innovation.'
     },
     {
       icon: Eye,
       title: 'Our Vision',
-      description: 'To be the globally recognized leader in institutional blockchain consultancy, shaping the future of public infrastructure, digital governance, and enterprise innovation through trusted partnerships and transformative solutions.'
+      description: 'To be Africa\'s most trusted blockchain consultancy, driving digital transformation that empowers governments, enterprises, and communities to participate fully in the emerging digital economy.'
     },
     {
       icon: Heart,
       title: 'Our Values',
-      description: 'Integrity, transparency, and accountability in every engagement. We prioritize long-term impact over short-term gains, embrace continuous learning, and maintain unwavering commitment to ethical technology adoption.'
+      description: 'Pragmatism over hype. Local impact with global standards. Transparency in every engagement. Long-term capacity building over short-term gains. Community-driven innovation and inclusive growth.'
     }
   ];
 
@@ -54,28 +54,28 @@ const AboutSection = () => {
             </div>
             
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight">
-              A Trusted Partner for{' '}
-              <span className="text-gradient-gold">Institutional Blockchain Adoption</span>
+              Your Trusted Partner for{' '}
+              <span className="text-gradient-gold">Blockchain Adoption in Africa</span>
             </h2>
             
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              WEB TATU HUB is a specialized blockchain consultancy agency serving governments, 
-              public institutions, enterprises, and regulated organizations worldwide.
+              WEB TATU HUB is a specialized blockchain consultancy operating across African markets, 
+              serving governments, enterprises, startups, and institutions navigating the digital frontier.
             </p>
             
             <p className="text-muted-foreground leading-relaxed mb-8">
-              We operate at the intersection of emerging technology and institutional governance, 
-              providing strategic advisory services that bridge the gap between blockchain innovation 
-              and real-world policy requirements. Our approach prioritizes responsible adoption, 
-              regulatory alignment, and institutional-grade solutions that deliver measurable, 
-              long-term value.
+              We understand that blockchain adoption in Africa requires more than technology—it demands 
+              practical solutions that address infrastructure gaps, regulatory uncertainty, and capacity 
+              constraints. Our approach combines global expertise with deep local knowledge, helping 
+              organizations build sustainable digital transformation strategies that create real value 
+              for their stakeholders and communities.
             </p>
 
             <div className="flex items-center gap-4 pt-4 border-t border-border">
               <img src={logo} alt="WEB TATU HUB Logo" className="w-14 h-14 rounded-lg object-contain" />
               <div>
                 <p className="font-semibold text-foreground">WEB TATU HUB</p>
-                <p className="text-sm text-muted-foreground">Blockchain Consultancy for Institutions</p>
+                <p className="text-sm text-muted-foreground">Blockchain Consultancy for Africa</p>
               </div>
             </div>
           </div>
@@ -104,7 +104,7 @@ const AboutSection = () => {
               Guided by <span className="text-gradient-gold">Purpose & Principles</span>
             </h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Our mission, vision, and values form the foundation of every partnership and engagement.
+              Our mission, vision, and values reflect our commitment to Africa's digital transformation journey.
             </p>
           </div>
 

@@ -6,96 +6,107 @@ import {
   Users, 
   Handshake,
   Gamepad2,
-  ArrowRight
+  ArrowRight,
+  Banknote,
+  Truck,
+  Building2,
+  FileCheck
 } from 'lucide-react';
 
 const ServicesSection = () => {
   const services = [
     {
       icon: Lightbulb,
-      title: 'Blockchain Consultancy & Advisory',
-      description: 'Strategic advisory services tailored for governments, public sector agencies, and institutions seeking to leverage blockchain technology.',
+      title: 'Strategic Advisory',
+      description: 'Comprehensive blockchain strategy for governments, enterprises, and startups navigating Africa\'s unique regulatory and infrastructure landscape.',
       features: [
-        'Digital identity infrastructure',
-        'Cross-border payment systems',
-        'Land registry modernization',
-        'Supply chain transparency',
-        'Public sector infrastructure'
+        'Digital transformation roadmaps',
+        'Infrastructure readiness assessment',
+        'Regulatory navigation support',
+        'Use case identification',
+        'Technology selection guidance'
       ]
     },
     {
       icon: GraduationCap,
-      title: 'Blockchain Education & Training',
-      description: 'Comprehensive capacity-building programs designed for institutional stakeholders and policymakers.',
+      title: 'Education & Capacity Building',
+      description: 'Building local expertise through training programs, workshops, and knowledge transfer initiatives.',
       features: [
-        'Executive leadership programs',
-        'Technical workshops for teams',
-        'Policy and regulatory training',
-        'Decision-maker briefings',
-        'Customized institutional curricula'
+        'Executive blockchain literacy',
+        'Developer training programs',
+        'Policy and regulatory workshops',
+        'Institutional capacity building',
+        'Talent pipeline development'
       ]
     },
     {
       icon: Search,
-      title: 'Platform & Tool Evaluation',
-      description: 'Independent, unbiased assessment of blockchain platforms, protocols, and enterprise tools.',
+      title: 'Platform & Vendor Evaluation',
+      description: 'Independent assessment of blockchain solutions, ensuring technology choices fit African market realities.',
       features: [
-        'Platform suitability analysis',
-        'Security and compliance audits',
-        'Scalability assessments',
-        'Vendor-neutral recommendations',
-        'Technology due diligence'
+        'Technology due diligence',
+        'Vendor suitability analysis',
+        'Interoperability assessment',
+        'Cost-benefit modeling',
+        'Risk evaluation frameworks'
       ]
     },
     {
       icon: Cog,
-      title: 'Implementation Consulting',
-      description: 'End-to-end support from strategic design through pilot programs to full-scale deployment.',
+      title: 'Implementation Support',
+      description: 'End-to-end guidance from pilot programs to full-scale deployment across diverse African contexts.',
       features: [
-        'Feasibility analysis',
-        'Governance framework design',
-        'Risk management protocols',
+        'Proof of concept development',
         'Pilot program management',
-        'Full deployment oversight'
+        'Integration with existing systems',
+        'Change management support',
+        'Post-deployment optimization'
       ]
     },
     {
       icon: Users,
-      title: 'Community Building & Ecosystem Marketing',
-      description: 'Strategic community development and stakeholder engagement for institutional blockchain initiatives.',
+      title: 'Community & Ecosystem Building',
+      description: 'Cultivating innovation ecosystems that connect developers, startups, and institutions across African markets.',
       features: [
-        'Stakeholder engagement strategies',
-        'Developer ecosystem cultivation',
-        'Public education campaigns',
-        'Ecosystem growth planning',
-        'Community governance design'
+        'Developer community programs',
+        'Startup ecosystem support',
+        'Hackathons and innovation labs',
+        'Cross-border collaboration',
+        'Knowledge sharing networks'
       ]
     },
     {
       icon: Handshake,
-      title: 'Partnership Development',
-      description: 'Connecting institutions with vetted blockchain solution providers and technology partners.',
+      title: 'Global Partnership Development',
+      description: 'Connecting African institutions with vetted international partners, technology providers, and investors.',
       features: [
-        'Vendor matching and vetting',
-        'Partnership facilitation',
-        'Contract advisory support',
-        'Long-term alignment planning',
-        'Quality assurance oversight'
+        'Partner identification and vetting',
+        'Joint venture facilitation',
+        'Investment readiness support',
+        'Technology transfer guidance',
+        'International market access'
       ]
     },
     {
       icon: Gamepad2,
-      title: 'Esports & Gaming Division',
-      description: 'A dedicated arm supporting the convergence of blockchain technology with gaming and esports.',
+      title: 'Web3 Gaming & Esports',
+      description: 'Dedicated support for blockchain gaming, digital assets, and esports innovation across the African continent.',
       features: [
         'Blockchain gaming integration',
         'Digital asset frameworks',
-        'Esports tournament infrastructure',
-        'Game studio partnerships',
-        'Community-driven innovation'
+        'Esports infrastructure advisory',
+        'Gaming studio partnerships',
+        'Play-to-earn ecosystem design'
       ],
       highlight: true
     }
+  ];
+
+  const sectors = [
+    { icon: Banknote, label: 'Finance & Payments', desc: 'Cross-border payments, remittances, DeFi' },
+    { icon: Truck, label: 'Supply Chain & Trade', desc: 'Trade finance, logistics, provenance' },
+    { icon: Building2, label: 'Public Services', desc: 'Identity, land registry, transparency' },
+    { icon: FileCheck, label: 'Governance', desc: 'Voting, records, accountability' }
   ];
 
   return (
@@ -117,14 +128,25 @@ const ServicesSection = () => {
           </div>
           
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl mb-6">
-            Comprehensive Blockchain Solutions for{' '}
-            <span className="text-gradient-gold">Institutional Success</span>
+            Practical Blockchain Solutions for{' '}
+            <span className="text-gradient-gold">African Markets</span>
           </h2>
           
           <p className="text-lg text-muted-foreground">
-            From strategic advisory to implementation support, we provide end-to-end services 
-            designed for the unique needs of governments and regulated organizations.
+            From strategy to implementation, we provide comprehensive services designed for 
+            Africa's unique challenges and opportunities in blockchain adoption.
           </p>
+        </div>
+
+        {/* Sector Tags */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+          {sectors.map((sector, index) => (
+            <div key={index} className="flex flex-col items-center text-center p-4 rounded-xl bg-secondary/30 border border-border">
+              <sector.icon className="w-6 h-6 text-primary mb-2" />
+              <span className="text-sm font-medium text-foreground">{sector.label}</span>
+              <span className="text-xs text-muted-foreground mt-1">{sector.desc}</span>
+            </div>
+          ))}
         </div>
 
         {/* Services Grid */}
@@ -140,7 +162,7 @@ const ServicesSection = () => {
             >
               {service.highlight && (
                 <div className="absolute -top-3 left-6 px-3 py-1 bg-gradient-gold text-primary-foreground text-xs font-semibold rounded-full">
-                  Specialized Division
+                  Growth Sector
                 </div>
               )}
               
