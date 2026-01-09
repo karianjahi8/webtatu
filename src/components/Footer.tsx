@@ -1,4 +1,4 @@
-import { Linkedin, Twitter, Mail } from 'lucide-react';
+import { Twitter, Mail } from 'lucide-react';
 import logo from '@/assets/logo.png';
 
 const Footer = () => {
@@ -6,10 +6,10 @@ const Footer = () => {
 
   const links = {
     services: [
-      { label: 'Consultancy & Advisory', href: '#services' },
+      { label: 'Strategic Advisory', href: '#services' },
       { label: 'Education & Training', href: '#services' },
-      { label: 'Platform Evaluation', href: '#services' },
-      { label: 'Implementation', href: '#services' },
+      { label: 'Implementation Support', href: '#services' },
+      { label: 'Web3 Gaming & Esports', href: '#services' },
     ],
     company: [
       { label: 'About Us', href: '#about' },
@@ -31,25 +31,20 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed mb-6">
-              Strategic blockchain consultancy for governments, institutions, and regulated enterprises worldwide.
+              Strategic blockchain consultancy for governments, enterprises, and startups across African markets.
             </p>
             <div className="flex items-center gap-4">
               <a 
-                href="#" 
+                href="https://x.com/WebTatuhub" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-smooth"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="w-4 h-4" />
-              </a>
-              <a 
-                href="#" 
-                className="w-10 h-10 rounded-lg border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-smooth"
-                aria-label="Twitter"
+                aria-label="X (Twitter)"
               >
                 <Twitter className="w-4 h-4" />
               </a>
               <a 
-                href="mailto:contact@webtatuhub.com" 
+                href="mailto:webtatuhub@gmail.com" 
                 className="w-10 h-10 rounded-lg border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-smooth"
                 aria-label="Email"
               >
@@ -97,11 +92,21 @@ const Footer = () => {
             <h4 className="font-serif text-lg text-foreground mb-4">Contact</h4>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li>
-                <a href="mailto:contact@webtatuhub.com" className="hover:text-foreground transition-smooth">
-                  contact@webtatuhub.com
+                <a href="mailto:webtatuhub@gmail.com" className="hover:text-foreground transition-smooth">
+                  webtatuhub@gmail.com
                 </a>
               </li>
-              <li>Serving clients globally</li>
+              <li>
+                <a 
+                  href="https://x.com/WebTatuhub" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-foreground transition-smooth"
+                >
+                  @WebTatuhub
+                </a>
+              </li>
+              <li>Serving clients across Africa</li>
             </ul>
           </div>
         </div>

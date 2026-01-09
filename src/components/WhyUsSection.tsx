@@ -1,45 +1,45 @@
-import { Building2, Scale, Shield, TrendingUp, CheckCircle } from 'lucide-react';
+import { MapPin, Scale, GraduationCap, Handshake, CheckCircle } from 'lucide-react';
 
 const WhyUsSection = () => {
   const differentiators = [
     {
-      icon: Building2,
-      title: 'Institutional Focus',
-      description: 'We exclusively serve governments, public institutions, and regulated enterprises—not retail or speculative markets. Our expertise is built around the unique governance, compliance, and operational requirements of institutional clients.',
+      icon: MapPin,
+      title: 'African Market Expertise',
+      description: 'We understand Africa\'s diverse regulatory environments, infrastructure constraints, and market dynamics. Our solutions are designed for local realities, not imported wholesale from other contexts.',
       points: [
-        'Tailored for public sector requirements',
-        'Understanding of bureaucratic processes',
-        'Proven institutional track record'
+        'Deep knowledge of regional regulations',
+        'Understanding of infrastructure gaps',
+        'Cross-border market experience'
       ]
     },
     {
       icon: Scale,
-      title: 'Platform Agnostic Advisory',
-      description: 'As an independent consultancy, we maintain strict neutrality across all blockchain platforms and vendors. Our recommendations are based solely on what best serves your institutional objectives.',
+      title: 'Regulatory Navigation',
+      description: 'Blockchain regulation varies significantly across African nations. We help organizations navigate compliance requirements while preparing for evolving regulatory frameworks.',
       points: [
-        'No vendor affiliations or conflicts',
-        'Objective technology assessments',
-        'Best-fit recommendations only'
+        'Country-specific compliance guidance',
+        'Proactive regulatory engagement',
+        'Risk mitigation strategies'
       ]
     },
     {
-      icon: Shield,
-      title: 'Governance & Compliance First',
-      description: 'Every engagement begins with regulatory alignment and risk assessment. We ensure that blockchain initiatives meet the highest standards of governance, transparency, and accountability.',
+      icon: GraduationCap,
+      title: 'Capacity Building Focus',
+      description: 'Sustainable blockchain adoption requires local expertise. We prioritize skills transfer, education, and talent development to build lasting capabilities within organizations and communities.',
       points: [
-        'Regulatory compliance frameworks',
-        'Risk management protocols',
-        'Audit-ready documentation'
+        'Knowledge transfer programs',
+        'Local talent development',
+        'Institutional capacity building'
       ]
     },
     {
-      icon: TrendingUp,
-      title: 'Long-term Impact',
-      description: 'We measure success not by project completion, but by sustainable outcomes. Our advisory relationships are designed to support institutions through the entire lifecycle of blockchain adoption.',
+      icon: Handshake,
+      title: 'Global-Local Bridge',
+      description: 'We connect African institutions with trusted global partners, technology providers, and investors—while ensuring solutions are adapted for local success.',
       points: [
-        'Multi-year strategic planning',
-        'Continuous improvement support',
-        'Knowledge transfer programs'
+        'Vetted global partner network',
+        'Technology provider matching',
+        'Investment readiness support'
       ]
     }
   ];
@@ -54,12 +54,12 @@ const WhyUsSection = () => {
           </div>
           
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl mb-6">
-            The <span className="text-gradient-gold">Institutional Advantage</span>
+            The <span className="text-gradient-gold">Africa Advantage</span>
           </h2>
           
           <p className="text-lg text-muted-foreground">
-            What sets WEB TATU HUB apart is our unwavering commitment to institutional excellence, 
-            regulatory alignment, and long-term partnership.
+            What sets WEB TATU HUB apart is our deep commitment to practical, sustainable 
+            blockchain adoption tailored for African markets.
           </p>
         </div>
 
