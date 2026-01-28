@@ -32,11 +32,11 @@ const HeroSection = () => {
           </div>
 
           {/* Logo */}
-          <div className="mb-6 animate-fade-in animation-delay-50">
+          <div className="mb-8 animate-fade-in animation-delay-50">
             <img 
               src={logo} 
               alt="WEB TATU HUB Logo" 
-              className="w-24 h-24 mx-auto rounded-2xl object-contain shadow-lg"
+              className="w-40 h-40 md:w-48 md:h-48 mx-auto rounded-3xl object-contain shadow-2xl ring-2 ring-primary/20"
             />
           </div>
 
