@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Shield, Globe, Zap, MapPin } from 'lucide-react';
+import logo from '@/assets/logo.png';
 
 const HeroSection = () => {
   return (
@@ -25,9 +26,18 @@ const HeroSection = () => {
       <div className="container mx-auto px-6 lg:px-12 relative z-10 pt-24">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-secondary/50 mb-8 animate-fade-in">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-secondary/50 mb-6 animate-fade-in">
             <MapPin className="w-4 h-4 text-primary" />
             <span className="text-sm text-muted-foreground font-medium">Trusted Across African Markets</span>
+          </div>
+
+          {/* Logo */}
+          <div className="mb-6 animate-fade-in animation-delay-50">
+            <img 
+              src={logo} 
+              alt="WEB TATU HUB Logo" 
+              className="w-24 h-24 mx-auto rounded-2xl object-contain shadow-lg"
+            />
           </div>
 
           {/* Headline */}
