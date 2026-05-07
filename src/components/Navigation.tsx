@@ -16,10 +16,11 @@ const Navigation = () => {
   }, []);
 
   const navLinks = [
-    { href: '#about', label: 'About' },
-    { href: '#services', label: 'Services' },
-    { href: '#why-us', label: 'Why Us' },
-    { href: '#contact', label: 'Contact' },
+    { href: '/#about', label: 'About' },
+    { href: '/#services', label: 'Services' },
+    { href: '/advisory', label: 'TATU' },
+    { href: '/global-entry', label: 'ZARA' },
+    { href: '/#contact', label: 'Contact' },
   ];
 
   return (
